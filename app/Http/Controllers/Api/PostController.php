@@ -11,6 +11,13 @@ use Illuminate\Http\Request;
 
 class PostController extends Controller
 {
+
+    private $postService;
+
+    public function __construct(PostService $postService){
+        $this->postService = $postService;
+    }
+
     public function index(Request $request, PostService $postService)
     {
         $sortField = request('sort_field', 'created_at');
@@ -30,7 +37,7 @@ class PostController extends Controller
             ])
         );
 
-        $posts = $postService->search(
+        $posts = $this->postService->search(
             $filled,
             request('search', ''),
             ['sort_dir' => $sortDirection, 'sort_field' => $sortField]
