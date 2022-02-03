@@ -32,13 +32,13 @@
             </tr>
             <tr>
                 <th>
-                    <input type="text" class="form-input w-100" v-model="params.title">
+                    <input type="text" class="form-control w-100" v-model="params.title">
                 </th>
                 <th>
-                    <input type="text" class="form-input w-100" v-model="params.post_text">
+                    <input type="text" class="form-control w-100" v-model="params.post_text">
                 </th>
                 <th>
-                    <input type="text" class="form-input w-100" v-model="params.created_at">
+                    <input type="text" class="form-control w-100" v-model="params.created_at">
                 </th>
                 <th></th>
             </tr>

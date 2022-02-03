@@ -21920,7 +21920,7 @@ var render = function () {
                     expression: "params.title",
                   },
                 ],
-                staticClass: "form-input w-100",
+                staticClass: "form-control w-100",
                 attrs: { type: "text" },
                 domProps: { value: _vm.params.title },
                 on: {
@@ -21944,7 +21944,7 @@ var render = function () {
                     expression: "params.post_text",
                   },
                 ],
-                staticClass: "form-input w-100",
+                staticClass: "form-control w-100",
                 attrs: { type: "text" },
                 domProps: { value: _vm.params.post_text },
                 on: {
@@ -21968,7 +21968,7 @@ var render = function () {
                     expression: "params.created_at",
                   },
                 ],
-                staticClass: "form-input w-100",
+                staticClass: "form-control w-100",
                 attrs: { type: "text" },
                 domProps: { value: _vm.params.created_at },
                 on: {
